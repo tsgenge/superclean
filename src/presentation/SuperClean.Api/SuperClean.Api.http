@@ -1,0 +1,6 @@
+@SuperClean.Api_HostAddress = http://localhost:5062
+
+GET {{SuperClean.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
