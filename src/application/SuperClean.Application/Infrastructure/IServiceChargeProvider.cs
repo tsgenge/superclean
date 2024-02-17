@@ -2,5 +2,6 @@
 {
     public interface IServiceChargeProvider
     {
+        Task<Guid> ChangeSubscriptionAsync(Guid userId, string subscriptionId);
     }
 }

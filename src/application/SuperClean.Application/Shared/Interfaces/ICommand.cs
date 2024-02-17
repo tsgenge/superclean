@@ -6,5 +6,6 @@ namespace SuperClean.Application.Shared.Interfaces
     {
         Guid AggregateId { get; }
         ClaimUser Actor { get; }
+        DateTimeOffset When { get; }
     }
 }
