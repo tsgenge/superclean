@@ -5,11 +5,21 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperClean.Application", "src\application\SuperClean.Application\SuperClean.Application.csproj", "{42193522-9C85-44F0-9EB4-516F9B6EB67B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperClean.Storage.Sql", "src\infrastructure\SuperClean.Storage.Sql\SuperClean.Storage.Sql.csproj", "{F1039956-FEB3-40CF-AB98-9F4932369D44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperClean.Storage.Sql", "src\infrastructure\SuperClean.Storage.Sql\SuperClean.Storage.Sql.csproj", "{F1039956-FEB3-40CF-AB98-9F4932369D44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperClean.Api", "src\presentation\SuperClean.Api\SuperClean.Api.csproj", "{CD2EACB5-4351-4BAA-8957-E636AC3E1355}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperClean.Api", "src\presentation\SuperClean.Api\SuperClean.Api.csproj", "{CD2EACB5-4351-4BAA-8957-E636AC3E1355}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperClean.Storage.CosmosDb", "src\infrastructure\SuperClean.Storage.CosmosDb\SuperClean.Storage.CosmosDb.csproj", "{B7575DF3-D607-466E-B79A-692CA6A7E4E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperClean.Storage.CosmosDb", "src\infrastructure\SuperClean.Storage.CosmosDb\SuperClean.Storage.CosmosDb.csproj", "{B7575DF3-D607-466E-B79A-692CA6A7E4E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CAB47147-252B-42A4-AF3E-5C87F2CA7D8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperClean.Application.Tests", "tests\SuperClean.Application.Tests\SuperClean.Application.Tests.csproj", "{3D5ACEDF-9080-4733-AB69-35C9576E3415}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{CF3B83C0-6DEA-47F4-91A8-96B91A508F9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{A00C058E-51FA-42D7-9EA5-B7AEE7332DE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{8C61E8A3-6320-4D3A-BB4B-609F3E99DF06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +43,20 @@ Global
 		{B7575DF3-D607-466E-B79A-692CA6A7E4E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7575DF3-D607-466E-B79A-692CA6A7E4E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7575DF3-D607-466E-B79A-692CA6A7E4E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D5ACEDF-9080-4733-AB69-35C9576E3415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D5ACEDF-9080-4733-AB69-35C9576E3415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D5ACEDF-9080-4733-AB69-35C9576E3415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D5ACEDF-9080-4733-AB69-35C9576E3415}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{42193522-9C85-44F0-9EB4-516F9B6EB67B} = {CF3B83C0-6DEA-47F4-91A8-96B91A508F9F}
+		{F1039956-FEB3-40CF-AB98-9F4932369D44} = {A00C058E-51FA-42D7-9EA5-B7AEE7332DE8}
+		{CD2EACB5-4351-4BAA-8957-E636AC3E1355} = {8C61E8A3-6320-4D3A-BB4B-609F3E99DF06}
+		{B7575DF3-D607-466E-B79A-692CA6A7E4E6} = {A00C058E-51FA-42D7-9EA5-B7AEE7332DE8}
+		{3D5ACEDF-9080-4733-AB69-35C9576E3415} = {CAB47147-252B-42A4-AF3E-5C87F2CA7D8D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8CCC617C-94E7-4786-A149-D2C812E66166}
